@@ -17,4 +17,3 @@ __pycache__/
 *.swp
 .env
 *.log
-!scripts/metax/train50/*_profiler.log

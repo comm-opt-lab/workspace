@@ -9,8 +9,7 @@
 | 路径 | 仓库 | 说明 |
 |---|---|---|
 | `megatron/hygon` | [megatron-hygon](https://github.com/comm-opt-lab/megatron-hygon) | 海光 DCU Megatron（`vendor` / `dgc-opt`） |
-| `megatron/metax` | [megatron-metax](https://github.com/comm-opt-lab/megatron-metax) | 沐曦 Megatron 0.14 + DGC（`vendor` / `dgc-opt`） |
-| `scripts/metax/train50` | 本仓 | 沐曦 FM9G / DeepSeek / Qwen 的 base vs opt 脚本与 ALL_COMM 结果 |
+| `megatron/metax` | [megatron-metax](https://github.com/comm-opt-lab/megatron-metax) | 沐曦：`Megatron-LM/` + `scripts/` + `profiler/` |
 | `megatron/ascend` | [megatron-ascend](https://github.com/comm-opt-lab/megatron-ascend) | 昇腾 |
 | `megatron/iluvatar` | [megatron-iluvatar](https://github.com/comm-opt-lab/megatron-iluvatar) | 天数 |
 | `comm/rccl-hygon` | [rccl-hygon](https://github.com/comm-opt-lab/rccl-hygon) | 海光 RCCL / SHCA |
@@ -31,5 +30,5 @@ git submodule update --init --recursive
 ## 约定
 
 - 仓库全部 **private**
-- 不提交 ckpt、dataset mmap、logs、profile
+- 不提交 ckpt、dataset mmap、大日志和完整 profiler trace（短摘要可放在对应硬件仓）
 - 改 Megatron 进对应 `megatron/<vendor>`，改通信库进 `comm/`
