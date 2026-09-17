@@ -27,8 +27,6 @@ git clone --recurse-submodules https://github.com/comm-opt-lab/workspace.git
 git submodule update --init --recursive
 ```
 
-集群节点不能直连 GitHub 时，用本机 Clash `7892` + `ssh -R 7892:127.0.0.1:7892`，远端 git 走 `socks5h://127.0.0.1:7892`。
-
 ## 约定
 
 - 仓库全部 **private**
