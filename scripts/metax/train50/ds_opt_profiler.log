@@ -1,0 +1,35 @@
+
+PyTorch Profiler Communication Summary
+=============================================
+Profile dir       : /private/yaowenxuan/yf/train50/DPSK/log/full-dpskv3-dgc-speedup-tp-8-pp-16-ep-8-gbs-256-mns-2-seq-512-layers-61_2026.07.13-11.10/profiler
+Event source      : comm
+Workers           : 32
+Files found       : 256
+Files scanned     : 256
+Comm events       : 12367520
+
+Top 20 Communication Operators
+------------------------------------------------------------------------------------------------------------------------------------------
+Operator                                                                                 Count       Total ms         Avg ms    % all comm
+------------------------------------------------------------------------------------------------------------------------------------------
+hcclKernel_SendRecv_RING_SIMPLE_Sum_int8_t(hcclDevComm*, unsigned long, hcclWork*)         345,600   18,250,179.213    52.807       64.17%
+hcclkernel_AllGather_FC8_int8_t(fcinfo)                                                  6,277,120    3,744,739.811     0.597       13.17%
+hcclKernel_AllReduce_TREE_LL_Sum_int32_t(hcclDevComm*, unsigned long, hcclWork*)             2,560    1,730,486.427   675.971        6.08%
+hcclKernel_ReduceScatter_FC8_Sum_hccl_bfloat16(fcinfo)                                   3,143,680    1,502,156.110     0.478        5.28%
+hcclKernel_AllReduce_FC8_LL_Sum_int64_t(fcinfo)                                            593,920    1,290,119.052     2.172        4.54%
+hcclKernel_AllGather_RING_SIMPLE_Sum_int8_t(hcclDevComm*, unsigned long, hcclWork*)         10,240      860,887.674    84.071        3.03%
+hcclKernel_ReduceScatter_FC8_LL_Sum_hccl_bfloat16(fcinfo)                                  624,640      480,124.510     0.769        1.69%
+hcclkernel_AllGather_FC8_LL_int8_t(fcinfo)                                                 624,640      418,915.975     0.671        1.47%
+c10d::send                                                                                 307,200       40,219.934     0.131        0.14%
+c10d::recv_                                                                                307,200       28,365.639     0.092        0.10%
+hcclKernel_AllReduce_TREE_LL_Sum_float(hcclDevComm*, unsigned long, hcclWork*)              15,520       20,888.226     1.346        0.07%
+hcclKernel_AllReduce_TREE_LL_Min_int32_t(hcclDevComm*, unsigned long, hcclWork*)             2,560       18,772.067     7.333        0.07%
+hcclKernel_Broadcast_RING_LL_Sum_int8_t(hcclDevComm*, unsigned long, hcclWork*)             61,440       15,397.396     0.251        0.05%
+hcclKernel_AllReduce_TREE_LL_Max_float(hcclDevComm*, unsigned long, hcclWork*)               5,120       11,373.039     2.221        0.04%
+hcclKernel_AllReduce_FC8_Sum_hccl_bfloat16(fcinfo)                                           2,560       10,133.802     3.959        0.04%
+hcclKernel_AllGather_RING_LL_Sum_int8_t(hcclDevComm*, unsigned long, hcclWork*)              2,560        5,462.114     2.134        0.02%
+hcclKernel_AllReduce_FC8_LL_Sum_float(fcinfo)                                               20,480        3,103.063     0.152        0.01%
+hcclKernel_AllReduce_RING_LL_Sum_float(hcclDevComm*, unsigned long, hcclWork*)               2,560        2,312.023     0.903        0.01%
+hcclKernel_AllReduce_TREE_LL_Sum_hccl_bfloat16(hcclDevComm*, unsigned long, hcclWork*)       2,560        2,205.971     0.862        0.01%
+hcclKernel_AllReduce_TREE_LL_PreMulSum_float(hcclDevComm*, unsigned long, hcclWork*)         5,120        1,883.316     0.368        0.01%
+
