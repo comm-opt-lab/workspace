@@ -1,0 +1,15 @@
+[submodule "megatron/hygon"]
+	path = megatron/hygon
+	url = https://github.com/comm-opt-lab/megatron-hygon.git
+[submodule "megatron/metax"]
+	path = megatron/metax
+	url = https://github.com/comm-opt-lab/megatron-metax.git
+[submodule "megatron/ascend"]
+	path = megatron/ascend
+	url = https://github.com/comm-opt-lab/megatron-ascend.git
+[submodule "megatron/iluvatar"]
+	path = megatron/iluvatar
+	url = https://github.com/comm-opt-lab/megatron-iluvatar.git
+[submodule "comm/rccl-hygon"]
+	path = comm/rccl-hygon
+	url = https://github.com/comm-opt-lab/rccl-hygon.git
