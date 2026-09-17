@@ -11,7 +11,7 @@
 | `megatron/hygon` | [megatron-hygon](https://github.com/comm-opt-lab/megatron-hygon) | 海光 DCU Megatron（`vendor` / `dgc-opt`） |
 | `megatron/metax` | [megatron-metax](https://github.com/comm-opt-lab/megatron-metax) | 沐曦：`Megatron-LM/` + `scripts/` + `profiler/` |
 | `megatron/ascend` | [megatron-ascend](https://github.com/comm-opt-lab/megatron-ascend) | 昇腾 |
-| `megatron/iluvatar` | [megatron-iluvatar](https://github.com/comm-opt-lab/megatron-iluvatar) | 天数 |
+| `megatron/iluvatar` | [megatron-iluvatar](https://github.com/comm-opt-lab/megatron-iluvatar) | 天数 MiniCPM：`Megatron-LM/` + `scripts/minicpm/` + `profiler/` |
 | `comm/rccl-hygon` | [rccl-hygon](https://github.com/comm-opt-lab/rccl-hygon) | 海光 RCCL / SHCA |
 | `scripts/` | 本仓 | 跨平台启动脚本（SothisAI 等） |
 
